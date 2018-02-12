@@ -20,11 +20,11 @@ public class LogAspect {
     public void after(JoinPoint joinPoint){
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
-        Action action = method.getAnnotation( Action. class);
-        System.out.println("注解式拦截 " + action. name());
+        Action action = method.getAnnotation(Action.class);
+        System.out.println("注解式拦截 " + action.name());
     }
 
-    @Before("execution(AOP.DemoMethodService.*(..)") //6
+    @Before("execution(* AOP.DemoMethodService.*(..))") //6
     public void before(JoinPoint joinPoint){
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
