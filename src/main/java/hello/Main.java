@@ -1,6 +1,6 @@
 package hello;
 
-import org. springframework. context. annotation. AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args)
@@ -9,7 +9,8 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DiConfig.class);
 
         UseFunctionService useFunctionService = context.getBean(UseFunctionService.class);
-        System.out.print(useFunctionService.SayHello("World"));
+        System.out.println(useFunctionService.SayHello("World"));
+        System.out.println(useFunctionService.SayHello_1("Tomorrow"));
         context.close();
     }
 }
