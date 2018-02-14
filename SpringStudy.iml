@@ -11,7 +11,16 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/Java_config/JavaConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/hello/DiConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/AOP/AopConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/Prepost/PrePostConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/EL/ElConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/Scope/ScopeConfig.java</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
