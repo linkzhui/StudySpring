@@ -14,5 +14,6 @@ public class Main {
         DemoSingleService s2 = context.getBean(DemoSingleService.class);
         System.out.println(p1==p2);
         System.out.println(s1==s2);
+        context.close();
     }
 }
