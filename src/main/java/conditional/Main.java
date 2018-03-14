@@ -1,7 +1,6 @@
 package conditional;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Condition;
 
 public class Main {
     public static void main(String[] args)

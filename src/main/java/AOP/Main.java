@@ -10,6 +10,5 @@ public class Main {
         demoAnnotationService.add();
         demoMethodService.add();
         context.close();
-
     }
 }

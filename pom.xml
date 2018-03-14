@@ -23,7 +23,20 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version> 4.1.6.RELEASE</version>
+            <version>4.1.6.RELEASE</version>
+        </dependency>
+
+        <!-- Spring test 支持 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.1.6.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
         </dependency>
 
         <!-- aspectj 支持 -->
@@ -52,7 +65,6 @@
         </dependency>
 
     </dependencies>
-
     <build>
         <plugins>
             <plugin>

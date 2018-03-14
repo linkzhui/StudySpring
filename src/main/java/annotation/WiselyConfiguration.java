@@ -1,14 +1,15 @@
+package annotation;
+
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 @Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Configuration  //1
-@ComponentScan  //2
+@ComponentScan("annotation")  //2
 public @interface WiselyConfiguration {
     String[] value() default{}; //3
 }

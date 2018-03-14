@@ -28,9 +28,15 @@ public class LogAspect {
     public void before(JoinPoint joinPoint){
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
-        System.out.println("方法规则式拦截,"+ method.getName());
+        System.out.println("方法规则式拦截之前,"+ method.getName());
     }
 
+    @After("execution(* AOP.DemoMethodService.*(..))") //6
+    public void aVoid(JoinPoint joinPoint){
+        MethodSignature signature = (MethodSignature) joinPoint.getSignature();
+        Method method = signature.getMethod();
+        System.out.println("方法规则式拦截之后,"+ method.getName());
+    }
 }
 
 //① 通过@ Aspect注解声明一个切面。
